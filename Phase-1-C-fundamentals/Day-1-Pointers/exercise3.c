@@ -2,7 +2,7 @@
 
 
 // Level 1 //
-/*
+
 void swap (int *p1 , int *p2){
  int temp = *p1;
  *p1 = *p2;
@@ -18,12 +18,12 @@ swap(p1 , p2);
 printf("%d %d \n " , a , b);
 
 }
-*/
+
 
 
 
 // Level 2 //
-/*
+
 void swap(char **p11 , char **p22){
     char *temp = *p11;
     *p11 = *p22;
@@ -41,10 +41,10 @@ int main(){
    
 
 }
-    */
+    
 
 
-//  level 3 //
+// //  level 3 //
 
 void swap (void * , void * , size_t);
 int main(){
@@ -65,4 +65,27 @@ void swap(void *a , void *b , size_t size){
        pa[i] = pb[i];
       pb[i] = temp;
    }
+}
+
+
+// checking for why char** is used instead of char* for string swap
+
+void swap(char ** , char **);
+
+int main(){
+    char *str1 = "hello";
+    char *str2 = "world";
+
+    swap(&str1 , &str2);
+    printf("%s , %s" , str1 , str2);
+}
+
+
+void swap(char **str1 , char **str2){
+    // printf("%s , %s " , *str1 , *str2);
+    char *temp = *str1;
+    *str1 = *str2;
+    *str2 = temp;
+
+
 }
