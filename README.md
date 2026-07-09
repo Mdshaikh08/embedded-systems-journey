@@ -7,3 +7,8 @@ i have started to take interest in learning about the Embedded Systems and how d
 /* The folders are according to the Days */
 
 DAY 1 : POINTERS - THE FOUNDATION
+DAY 2 : DOUBLE POINTERS
+DAY 3 : STRUCT , UNION , BITFIELD
+DAY 4 : BIT MANIPULATION
+DAY 5 : FUNCTION POINTERS VOLATILE CONST
+DAY 6 : ENDIANESS ALIGNMENT
