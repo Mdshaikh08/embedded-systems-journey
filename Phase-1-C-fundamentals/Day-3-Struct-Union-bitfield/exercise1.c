@@ -25,7 +25,7 @@ void print_student(student *s){
 }
 
 void update_age(student *s){
-    ++s->age;
+    ++(s->age);
     // printf("%d" , s->age);
 
 }

@@ -17,7 +17,7 @@ int main(){
 
     for (int i = 0; i < 4; i++)
     {       
-        printf("byte[%d] = 0x%02X\n " , i , fb.byte[i]);
+        printf("byte[%d] = 0x%02X\n" , i , fb.byte[i]);
     }
 
     printf("as float : %.6f\n" , fb.f);

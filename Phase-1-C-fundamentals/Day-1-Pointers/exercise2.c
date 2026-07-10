@@ -14,9 +14,9 @@ int main(){
 }
 
 void print_arrayN (int *arrayN , int arrL){
-    int *nextto_last_elem = arrayN + arrL;
+    int *last_elem = arrayN + (arrL - 1);
     printf("array = {");
-    while(arrayN < nextto_last_elem){
+    while(arrayN <= last_elem){
     printf(" %d " , *arrayN);
     arrayN++;
     }
@@ -24,9 +24,9 @@ void print_arrayN (int *arrayN , int arrL){
 }
 
 void sum_arrayN(int *arrayN, int arrL){
-    int *nextto_last_elem = arrayN + arrL;
+    int *last_elem = arrayN + (arrL-1);
     int sum = 0;
-    while(arrayN < nextto_last_elem){
+    while(arrayN <= last_elem){
         sum = sum + *arrayN;
         arrayN++;
     }
@@ -34,14 +34,19 @@ void sum_arrayN(int *arrayN, int arrL){
 }
 
 void find_max(int *arrayN , int arrL){
-    int *nextto_last_elem = arrayN + arrL;
+    int *last_elem = arrayN + (arrL-1);
     int Max = *arrayN;
-    while (arrayN < nextto_last_elem - 1){
-        if (*(arrayN + 1) > Max){
-            Max = *(arrayN + 1);
+    arrayN++;
+    while (arrayN <= last_elem)
+    {
+        if (*arrayN > Max)
+        {
+            Max = *arrayN;
         }
         arrayN++;
+        
     }
+    
     printf("max value from elements of array = %d \n", Max );
     
 }

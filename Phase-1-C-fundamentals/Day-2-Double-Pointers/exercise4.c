@@ -13,8 +13,8 @@ int main(){
 
 
 int* find_first_negative(int* arr , int n){
-      int *nextto_last_elem = arr + n;
-      while (arr < nextto_last_elem)
+      int *last_elem = arr + (n -1);
+      while (arr <= last_elem)
       {
         if(*arr < 0){
             return arr;

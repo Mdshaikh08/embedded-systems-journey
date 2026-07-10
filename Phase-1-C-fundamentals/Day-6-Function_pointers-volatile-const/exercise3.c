@@ -1,35 +1,30 @@
 #include<stdio.h>
-#include<stdlib.h>
+
 
 typedef void (*Eventhandler)(void);
 
 Eventhandler registered_handler = NULL;
 
-void Register_handler(Eventhandler handler){
+void Registered_Handler(Eventhandler handler){
     registered_handler = handler;
 }
 
-void trigger_event(){
-    if (registered_handler != NULL)
-    {
+void Trigger_Event(void){
+    if(registered_handler != NULL){
         registered_handler();
     }
-    else
-    {
-        printf("No Handler Registered\n");
+    else{
+        printf("No Event Registered!\n");
     }
-    
-    
-
 }
 
-void my_handler(){
-    printf("Event handled!\n");
+void My_Handler(void){
+    printf("Event Handled!\n");
 }
 
 
 int main(){
-    trigger_event();
-    Register_handler(my_handler);
-    trigger_event();
+    Trigger_Event();
+    Registered_Handler(My_Handler);
+    Trigger_Event();
 }
