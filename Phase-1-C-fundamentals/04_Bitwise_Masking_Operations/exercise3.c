@@ -1,4 +1,5 @@
-
+#include<stdio.h>
+#include<stdint.h>
 
 // Simulate setting up a UART register
 // Bit 0   = enable UART (1=on)
