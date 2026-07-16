@@ -1,4 +1,4 @@
-markdown# Bare-Metal C & Low-Level System Fundamentals
+# Bare-Metal C & Low-Level System Fundamentals
 
 This repository contains my implementation of core Embedded C concepts, focusing on memory efficiency, raw bit manipulation, and software-to-hardware mapping.
 
