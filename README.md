@@ -1,22 +1,12 @@
-# embedded-systems-journey
-i have started to take interest in learning about the Embedded Systems and how does the OS and the Kernel works. This repo is to document my learning journey of Embedded Systems
+markdown# Bare-Metal C & Low-Level System Fundamentals
 
+This repository contains my implementation of core Embedded C concepts, focusing on memory efficiency, raw bit manipulation, and software-to-hardware mapping.
 
+## Key Concepts Implemented
+- **Bit Manipulation:** Custom macros for setting, clearing, and toggling specific register bits.
+- **Memory Management:** Structure padding analysis, alignment optimization, and safe type punning.
+- **Advanced C:** Practical application of `volatile`, `static`, function pointers, and custom linked lists.
 
-
-/* The folders are according to the Days */
-
-DAY 1 : POINTERS - THE FOUNDATION
-
-DAY 2 : DOUBLE POINTERS
-
-DAY 3 : STRUCT , UNION , BITFIELD
-
-DAY 4 : BIT MANIPULATION
-
-DAY 5 : MEMORY MANAGEMENT
-
-DAY 6 : FUNCTION POINTERS VOLATILE CONST
-
-DAY 7 : ENDIANESS ALIGNMENT
+## Target Goals
+Transitioning these simulated logic blocks onto physical hardware registers (targeting STM32/ARM Cortex-M architecture next).
 
