@@ -1,0 +1,49 @@
+******* FINITE STATE MACHINE *********
+
+
+-> This is a reactive or event driven model where number of state are finite.
+
+->Represented as "STATE , EVENT , ACTION , TRANSITION"
+
+1. STATE : Represention of current situation.
+
+2. EVENT : Represention of input to the state.
+
+3. ACTION: Represention of activity to be performed by state machine.
+
+4. TRANSITION : Movement from one state to another.
+
+
+
+**There are commonly 3 approaches for fsm ** 
+
+**1. Switch Case Method (fsm1.c)**
+**2. State Transition Table (Matrix / Lookup Table)**
+
+
+typedef enum { STATE_LOCKED, STATE_UNLOCKED } GateState;
+typedef enum { EVENT_NONE, EVENT_COIN, EVENT_PUSH } GateEvent;
+
+// 2D Array: TransitionTable[CurrentState][Event] = NextState
+const GateState transitionTable[2][3] = {
+    // Current State: LOCKED
+    [STATE_LOCKED]   = { [EVENT_COIN] = STATE_UNLOCKED, [EVENT_PUSH] = STATE_LOCKED   },
+    // Current State: UNLOCKED
+    [STATE_UNLOCKED] = { [EVENT_COIN] = STATE_UNLOCKED, [EVENT_PUSH] = STATE_LOCKED   }
+};
+
+GateState currentState = STATE_LOCKED;
+
+void run_table_fsm(GateEvent event) {
+    // Instantly looks up the next state mathematically without code branching
+    currentState = transitionTable[currentState][event];
+    printf("[Table] Current state updated to: %d\n", currentState);
+}
+
+**3. Function pointers (each state is its own independent function)**(exercise4.c)
+
+
+
+
+
+
