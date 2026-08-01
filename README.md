@@ -6,6 +6,7 @@ This repository contains my implementation of core Embedded C concepts, focusing
 - **Bit Manipulation:** Custom macros for setting, clearing, and toggling specific register bits.
 - **Memory Management:** Structure padding analysis, alignment optimization, and safe type punning.
 - **Advanced C:** Practical application of `volatile`, `static`, function pointers, and custom linked lists.
+- **Data Structures:** Linear buffer , Ring buffer , ISR(Interupt Service Routine), Stack, Queue, and Finite State Machine Implementations & Approaches.
 
 ## Target Goals
 Transitioning these simulated logic blocks onto physical hardware registers (targeting STM32/ARM Cortex-M architecture next).
