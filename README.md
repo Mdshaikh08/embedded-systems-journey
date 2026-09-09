@@ -1,6 +1,6 @@
 # Embedded Systems Journey
 
-A self-designed, day-by-day path from C fundamentals to embedded software engineering — built while targeting roles at NVIDIA, Qualcomm, NXP, Bosch, and Continental.
+A self-designed, day-by-day path from C fundamentals to embedded software engineering 
 
 This repo is my learning log: every folder is a working day, every commit is real progress (bugs included). It's not a tutorial I copied — it's the record of me building each concept from scratch, debugging it myself, and writing it down.
 
@@ -35,6 +35,3 @@ Each folder covers one day's concept, built from a mix of guided exercises and s
 - NXP FRDM-MCXN236 (Cortex-M33, 150 MHz) — primary board for Phase 2 onward
 - MCUXpresso IDE + MCXN236 SDK
 
-## Notes
-
-Phase 1 was deliberately compressed toward the end to get a portfolio-ready project finished ahead of interview scheduling — a couple of side-topics (Valgrind, network-header unions, ISR/thread-safety deep dive) were intentionally parked to be picked up once Phase 2's real hardware work makes them concrete rather than abstract.
